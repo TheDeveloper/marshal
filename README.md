@@ -52,8 +52,8 @@ Exposes a set of events to inform the app of state transitions:
 
 Clusters are collections of groups. In much the same way as groups, commands can be sent to a cluster and be routed to groups using rules:
 
-* marshal0: Consistent hashing (striping). Using a hash algo, map a key to a group and route commands against that key to that group.
-* marshal1: Replica (mirroring). Mirror all commands issued to one group to at least one other.
+* marshal0: Consistent hashing (striping). Using a hash algo, assign a key to a group and route commands against the key to its assigned group.
+* marshal1: Replica (mirroring). Replicate all commands issued to one group to at least one other group.
 
 ### Farms
 Farms are a collection of clusters.
