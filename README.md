@@ -2,7 +2,7 @@
 
 Just a spec for now. I'm still kicking about ideas. The rest is still to come :-)
 
-In the meantime, please give feedback. If you've found this, then you've probably got a specific use case in mind. Let me know what you intend to do any feel free to suggest features/improvements. Message me on GitHub or create a pull request with your suggestions.
+In the meantime, please give feedback. If you've found this, then you've probably got a specific use case in mind. Let me know what you intend to do and feel free to suggest features/improvements. Message me on GitHub or create a pull request with your suggestions.
 
 # Marshal
 
