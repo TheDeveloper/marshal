@@ -1,4 +1,6 @@
-** Current status: ** Just a spec for now. I'm still kicking about ideas. The rest is still to come :-)
+** Current status **
+
+Just a spec for now. I'm still kicking about ideas. The rest is still to come :-)
 
 # Marshal
 
