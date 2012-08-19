@@ -1,6 +1,8 @@
-** Current status **
+**Current status**
 
 Just a spec for now. I'm still kicking about ideas. The rest is still to come :-)
+
+In the meantime, please give feedback. If you've found this, then you've probably got a specific use case in mind. Let me know what you intend to do any feel free to suggest features/improvements. Message me on GitHub or create a pull request with your suggestions.
 
 # Marshal
 
@@ -12,12 +14,12 @@ A connection group is effectively a replica set of Redis servers comprising a ma
 ### Command routing
 The usual Redis commands are issued to the group. Commands will be routed to particular servers using rules:
 
-** Master only **
+**Master only**
 
 * Read & Write commands to be sent to the master.
 * Optional readonly mode: If master is down, send reads to one or many slaves and fail writes. This way we can still read from slaves even if master is unavailable.
 
-** Read / Write segregation **
+**Read / Write segregation**
 
 * Send writes to the master only.
 * Send reads to one or many slaves with weighted round-robin.
@@ -28,9 +30,9 @@ Exposes a set of events to inform the app of state transitions:
 
 
 #### Definitions
-** Down ** - Redis server is unavailable due to a failure or disconnect.
+**Down** - Redis server is unavailable due to a failure or disconnect.
 
-** Up ** - Redis server is up for the first time, or back up after a disconnect or failure.
+**Up** - Redis server is up for the first time, or back up after a disconnect or failure.
 
 #### Events
 
