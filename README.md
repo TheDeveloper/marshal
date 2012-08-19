@@ -95,8 +95,6 @@ cluster.addGroup(group)
 // Split the keyspace across the two groups using marshal0 routing
 cluster.use(marshal.stripe);
 
-cluster.set('test', function(err, res){
-
-});
+cluster.set('test', 'Where will I go? Subject to the magic of modulo!');
 
 ````
