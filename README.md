@@ -6,7 +6,7 @@ In the meantime, please give feedback. If you've found this, then you've probabl
 
 # Marshal
 
-Grouped connections and command routing management for one or more Redis servers.
+Connection grouping, state monitoring and command routing management for one or more Redis servers.
 
 ### Groups
 A connection group is effectively a replica set of Redis servers comprising a master and any number of slaves replicating that master. Connections to Redis servers can be classified by master, slave or sentinel roles, and added to a group. A single Redis sentinel role can be used to auto-configure a group using sentinel discovery.
